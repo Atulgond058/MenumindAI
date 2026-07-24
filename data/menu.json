@@ -1,0 +1,44 @@
+[
+    {
+      "id": 101,
+      "name": "Margherita Pizza",
+      "category": "Mains",
+      "price": 12.99,
+      "tags": ["vegetarian", "cheese", "italian", "classic"]
+    },
+    {
+      "id": 102,
+      "name": "Grilled Chicken Salad",
+      "category": "Salads",
+      "price": 10.50,
+      "tags": ["healthy", "protein", "gluten-free", "low-carb"]
+    },
+    {
+      "id": 103,
+      "name": "Vegan Avocado Burger",
+      "category": "Mains",
+      "price": 14.00,
+      "tags": ["vegan", "plant-based", "healthy", "burger"]
+    },
+    {
+      "id": 104,
+      "name": "Spicy Creamy Pasta",
+      "category": "Mains",
+      "price": 13.50,
+      "tags": ["spicy", "pasta", "vegetarian"]
+    },
+    {
+      "id": 105,
+      "name": "Fresh Berry Smoothie",
+      "category": "Beverages",
+      "price": 5.50,
+      "tags": ["beverage", "vegan", "cold", "sweet"]
+    },
+    {
+      "id": 106,
+      "name": "Chocolate Fudge Cake",
+      "category": "Dessert",
+      "price": 6.99,
+      "tags": ["sweet", "dessert", "chocolate"]
+    }
+  ]
