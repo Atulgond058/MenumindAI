@@ -70,14 +70,14 @@
       "name": "Chocolate Fudge Cake",
       "price": 6.99,
       "tags": ["sweet", "dessert", "chocolate"],
-      "image": "black forest cake.jpg"
+      "image": "black forest cake.jpeg"
     },
     {
       "id": 109,
       "name": "Gulab Jamun",
       "price": 4.50,
       "tags": ["indian", "sweet", "dessert"],
-      "image": "gulab jamun.jpeg"
+      "image": "gulabjamun.jpeg"
     },
     {
       "id": 110,
@@ -91,7 +91,7 @@
       "name": "Red Velvet Cake",
       "price": 7.50,
       "tags": ["sweet", "dessert", "cake"],
-      "image": "red velvet cake.jpeg"
+      "image": "red valvet cake.jpeg"
     },
     {
       "id": 118,
@@ -119,7 +119,7 @@
       "name": "Gajar Ka Halwa",
       "price": 5.00,
       "tags": ["indian", "sweet", "dessert"],
-      "image": "gajar halwa.jpg"
+      "image": "gajar halwa.jpeg"
     }
   ],
   "Beverages": [
