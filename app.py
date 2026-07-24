@@ -47,10 +47,21 @@ else:
 
     st.sidebar.divider()
     st.sidebar.subheader(f"Total: ₹{total_amount:.2f}")
+    st.sidebar.divider()
 
-    if st.sidebar.button("✅ Confirm & Register Order", type="primary", use_container_width=True):
-        st.sidebar.success("🎉 Order Registered Successfully! Sending to Kitchen...")
-        st.session_state.cart = {}
+    # --- Customer & Table Details Section ---
+    st.sidebar.subheader("👤 Customer Details")
+    customer_name = st.sidebar.text_input("Customer Name*", placeholder="Enter your name")
+    table_number = st.sidebar.number_input("Table Number", min_value=1, max_value=100, value=1, step=1)
+
+    # --- Smart Validation Checkout Logic ---
+    if not customer_name.strip():
+        st.sidebar.warning("⚠️ Please enter Customer Name to place order.")
+        st.sidebar.button("✅ Confirm & Register Order", type="primary", use_container_width=True, disabled=True)
+    else:
+        if st.sidebar.button("✅ Confirm & Register Order", type="primary", use_container_width=True):
+            st.sidebar.success(f"🎉 Order Registered for {customer_name.strip()} (Table #{table_number})! Sending to Kitchen...")
+            st.session_state.cart = {}
 
 # Main UI Tabs
 tab1, tab2 = st.tabs(["💬 AI Menu Recommender", "📜 Full Menu"])
