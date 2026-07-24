@@ -39,14 +39,14 @@ else:
             subtotal = item.price * qty
             total_amount += subtotal
             col_a, col_b, col_c = st.sidebar.columns([3, 1, 1])
-            col_a.write(f"**{item.name}**\n${item.price} x {qty}")
-            col_b.write(f"${subtotal:.2f}")
+            col_a.write(f"**{item.name}**\n₹{item.price} x {qty}")
+            col_b.write(f"₹{subtotal:.2f}")
             if col_c.button("❌", key=f"remove_{item_id}"):
                 del st.session_state.cart[item_id]
                 st.rerun()
 
     st.sidebar.divider()
-    st.sidebar.subheader(f"Total: ${total_amount:.2f}")
+    st.sidebar.subheader(f"Total: ₹{total_amount:.2f}")
 
     if st.sidebar.button("✅ Confirm & Register Order", type="primary", use_container_width=True):
         st.sidebar.success("🎉 Order Registered Successfully! Sending to Kitchen...")
@@ -70,7 +70,7 @@ with tab1:
         for idx, item in enumerate(recommendations):
             with cols[idx % 2]:
                 st.markdown(f"### {item.name}")
-                st.write(f"**Category:** {item.category} | **Price:** ${item.price:.2f}")
+                st.write(f"**Category:** {item.category} | **Price:** ₹{item.price:.2f}")
                 st.write(f"🏷️ *Tags:* {', '.join(item.tags)}")
 
                 if st.button(f"Add {item.name} to Cart", key=f"rec_add_{item.id}"):
@@ -87,7 +87,7 @@ with tab2:
     for idx, item in enumerate(all_items):
         with cols[idx % 3]:
             st.write(f"### {item.name}")
-            st.write(f"💰 **Price:** ${item.price:.2f}")
+            st.write(f"💰 **Price:** ₹{item.price:.2f}")
             st.write(f"📁 **Category:** {item.category}")
             st.caption(f"Tags: {', '.join(item.tags)}")
 
