@@ -2,12 +2,37 @@ import streamlit as st
 import os
 from agent import menumindAIAgent, MenuItem, OrderItem, Order
 
+# custom CSS add kar sakte hain:
+st.markdown("""
+    <style>
+    [data-testid="stImage"] img {
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Page Config
 st.set_page_config(
     page_title="menumind AI - Smart Dining",
     page_icon="🍔",
     layout="wide"
 )
+
+# Images folder path (Apne project structure ke hisaab se adjust kar sakte hain)
+IMAGE_DIR = os.path.join("data", "images")
+
+def show_item_image(image_filename: str):
+    """Local image file safely load karke Streamlit par render karta hai"""
+    if image_filename and image_filename.strip():
+        img_path = os.path.join(IMAGE_DIR, image_filename)
+        if os.path.exists(img_path):
+            st.image(img_path, use_container_width=True)
+        else:
+            st.caption("🖼️ *Image missing*")
+    else:
+        st.caption("🖼️ *No image available*")
 
 # Initialize Session States for backend persistence
 if "agent" not in st.session_state:
@@ -80,6 +105,9 @@ with tab1:
         cols = st.columns(2)
         for idx, item in enumerate(recommendations):
             with cols[idx % 2]:
+
+                show_item_image(item.image)
+
                 st.markdown(f"### {item.name}")
                 st.write(f"**Category:** {item.category} | **Price:** ₹{item.price:.2f}")
                 st.write(f"🏷️ *Tags:* {', '.join(item.tags)}")
@@ -97,6 +125,9 @@ with tab2:
     cols = st.columns(3)
     for idx, item in enumerate(all_items):
         with cols[idx % 3]:
+
+            show_item_image(item.image)
+
             st.write(f"### {item.name}")
             st.write(f"💰 **Price:** ₹{item.price:.2f}")
             st.write(f"📁 **Category:** {item.category}")

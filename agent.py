@@ -10,6 +10,7 @@ class MenuItem(BaseModel):
     category: str
     price: float
     tags: List[str]
+    image: str = ""
 
 
 class OrderItem(BaseModel):

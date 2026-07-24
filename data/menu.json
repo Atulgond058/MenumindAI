@@ -1,44 +1,141 @@
-[
+{
+  "Snacks & Mains": [
     {
       "id": 101,
       "name": "Margherita Pizza",
-      "category": "Mains",
       "price": 12.99,
-      "tags": ["vegetarian", "cheese", "italian", "classic"]
-    },
-    {
-      "id": 102,
-      "name": "Grilled Chicken Salad",
-      "category": "Salads",
-      "price": 10.50,
-      "tags": ["healthy", "protein", "gluten-free", "low-carb"]
+      "tags": ["vegetarian", "cheese", "italian", "classic"],
+      "image": "Margherita Pizza.jpeg"
     },
     {
       "id": 103,
       "name": "Vegan Avocado Burger",
-      "category": "Mains",
       "price": 14.00,
-      "tags": ["vegan", "plant-based", "healthy", "burger"]
+      "tags": ["vegan", "plant-based", "healthy", "burger"],
+      "image": "vegan avacado burger.jpeg"
     },
     {
-      "id": 104,
-      "name": "Spicy Creamy Pasta",
-      "category": "Mains",
-      "price": 13.50,
-      "tags": ["spicy", "pasta", "vegetarian"]
+      "id": 107,
+      "name": "Paneer Butter Masala",
+      "price": 11.99,
+      "tags": ["indian", "vegetarian", "curry", "paneer"],
+      "image": "butter paneer.jpeg"
     },
     {
-      "id": 105,
-      "name": "Fresh Berry Smoothie",
-      "category": "Beverages",
-      "price": 5.50,
-      "tags": ["beverage", "vegan", "cold", "sweet"]
+      "id": 108,
+      "name": "Butter Chicken",
+      "price": 13.99,
+      "tags": ["indian", "non-veg", "chicken", "curry"],
+      "image": "butter chicken.jpeg"
     },
+    {
+      "id": 113,
+      "name": "Chicken Dum Biryani",
+      "price": 14.99,
+      "tags": ["indian", "non-veg", "rice", "spicy"],
+      "image": "biryani.jpeg"
+    },
+    {
+      "id": 115,
+      "name": "Chole Bhature",
+      "price": 9.99,
+      "tags": ["indian", "vegetarian", "spicy", "street-food"],
+      "image": "chole bhature.jpeg"
+    },
+    {
+      "id": 116,
+      "name": "Masala Dosa",
+      "price": 8.99,
+      "tags": ["indian", "vegetarian", "south-indian"],
+      "image": "masala dosa.jpeg"
+    },
+    {
+      "id": 117,
+      "name": "Pav Bhaji",
+      "price": 7.99,
+      "tags": ["indian", "vegetarian", "street-food"],
+      "image": "pav bhaji.jpeg"
+    },
+    {
+      "id": 127,
+      "name": "Samosa (2 pcs)",
+      "price": 4.00,
+      "tags": ["indian", "vegetarian", "snack"],
+      "image": "samosa.jpeg"
+    }
+  ],
+  "Sweets & Desserts": [
     {
       "id": 106,
       "name": "Chocolate Fudge Cake",
-      "category": "Dessert",
       "price": 6.99,
-      "tags": ["sweet", "dessert", "chocolate"]
+      "tags": ["sweet", "dessert", "chocolate"],
+      "image": ".jpg"
+    },
+    {
+      "id": 109,
+      "name": "Gulab Jamun",
+      "price": 4.50,
+      "tags": ["indian", "sweet", "dessert"],
+      "image": "gulab jamun.jpeg"
+    },
+    {
+      "id": 110,
+      "name": "Rasgulla",
+      "price": 4.50,
+      "tags": ["indian", "sweet", "dessert"],
+      "image": "rasgulla.jpeg"
+    },
+    {
+      "id": 111,
+      "name": "Red Velvet Cake",
+      "price": 7.50,
+      "tags": ["sweet", "dessert", "cake"],
+      "image": "red velvet cake.jpeg"
+    },
+    {
+      "id": 118,
+      "name": "Rasmalai",
+      "price": 5.50,
+      "tags": ["indian", "sweet", "dessert"],
+      "image": "rasmalai.jpeg"
+    },
+    {
+      "id": 119,
+      "name": "Crispy Jalebi",
+      "price": 4.00,
+      "tags": ["indian", "sweet", "dessert"],
+      "image": "jalebi.jpeg"
+    },
+    {
+      "id": 120,
+      "name": "Kaju Katli",
+      "price": 6.00,
+      "tags": ["indian", "sweet", "dessert"],
+      "image": "kaju katli.jpeg"
+    },
+    {
+      "id": 121,
+      "name": "Gajar Ka Halwa",
+      "price": 5.00,
+      "tags": ["indian", "sweet", "dessert"],
+      "image": "gajar halwa.jpg"
+    }
+  ],
+  "Beverages": [
+    {
+      "id": 105,
+      "name": "Fresh Berry Smoothie",
+      "price": 5.50,
+      "tags": ["beverage", "vegan", "cold"],
+      "image": "fresh berry smoothie.jpeg"
+    },
+    {
+      "id": 125,
+      "name": "Mango Lassi",
+      "price": 4.50,
+      "tags": ["indian", "beverage", "cold"],
+      "image": "mango lassi.jpeg"
     }
   ]
+}
