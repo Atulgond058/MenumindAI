@@ -32,12 +32,28 @@ class menumindAIAgent:
     def __init__(self, menu_filepath: str):
         self.menu: List[MenuItem] = self._load_menu(menu_filepath)
 
-    def _load_menu(self, filepath: str) -> List[MenuItem]:
-        if not os.path.exists(filepath):
-            return []
-        with open(filepath, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            return [MenuItem(**item) for item in data]
+    def _load_menu(self, filepath):
+     import json
+     with open(filepath, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+     all_items = []
+     # Agar data nested dictionary hai (jaise aapka naya JSON hai)
+     if isinstance(data, dict):
+        for category_name, items in data.items():
+            if isinstance(items, list):
+                for item in items:
+                    if isinstance(item, dict):
+                        #agar item me category key nahi hai, toh dictionary key se inject karein
+                        if "category" not in item:
+                            item["category"] = category_name
+                        all_items.append(item)
+
+    # Agar data plain list hai
+     elif isinstance(data, list):
+        all_items = data
+        
+     return [MenuItem(**item) for item in all_items]
 
     def get_all_menu_items(self) -> List[MenuItem]:
         return self.menu
