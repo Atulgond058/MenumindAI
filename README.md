@@ -1,4 +1,4 @@
-# Manumind AI: Smart Orders, Smarter Dining
+# MenuMind AI: Smart Orders, Smarter Dining
 
 An AI-powered web assistant designed for modern restaurants to automate menu recommendations and streamline customer ordering.
 

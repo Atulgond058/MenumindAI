@@ -1,10 +1,10 @@
 import streamlit as st
 import os
-from agent import ManumindAIAgent, MenuItem, OrderItem, Order
+from agent import menumindAIAgent, MenuItem, OrderItem, Order
 
 # Page Config
 st.set_page_config(
-    page_title="Manumind AI - Smart Dining",
+    page_title="menumind AI - Smart Dining",
     page_icon="🍔",
     layout="wide"
 )
@@ -12,13 +12,13 @@ st.set_page_config(
 # Initialize Session States for backend persistence
 if "agent" not in st.session_state:
     menu_path = os.path.join("data", "menu.json")
-    st.session_state.agent = ManumindAIAgent(menu_path)
+    st.session_state.agent = menumindAIAgent(menu_path)
 
 if "cart" not in st.session_state:
     st.session_state.cart = {}  # Format: {item_id: quantity}
 
 # Header Section
-st.title("🤖 Manumind AI")
+st.title("🤖 MenuMind AI")
 st.caption("Smart Orders, Smarter Dining | AI Assistant")
 st.divider()
 

@@ -25,8 +25,8 @@ class Order(BaseModel):
         return sum(order_item.item.price * order_item.quantity for order_item in self.items)
 
 
-class ManumindAIAgent:
-    """Core AI Backend Engine for Manumind AI"""
+class menumindAIAgent:
+    """Core AI Backend Engine for menumind AI"""
 
     def __init__(self, menu_filepath: str):
         self.menu: List[MenuItem] = self._load_menu(menu_filepath)
