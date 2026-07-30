@@ -1,8 +1,16 @@
-# 🍽️ MenuMind AI
+
+# MenuMind AI: Smart Orders, Smarter Dining
 
 > An intelligent, AI-powered menu and dining assistant designed to help users explore, understand, and decide on food options seamlessly.
 
 ---
+
+## 📄 Project Documentation
+
+Click on the preview image below to view or download the full PDF documentation.
+
+![Project Preview](Manumind AI.jpg)
+
 
 ## 🚀 Live Demo
 Check out the live application here: [https://menumindai.onrender.com](https://menumindai.onrender.com)
@@ -23,8 +31,8 @@ Check out the live application here: [https://menumindai.onrender.com](https://m
 ---
 
 ## 🛠️ Tech Stack
-* **Frontend:** HTML, CSS, JavaScript / React
-* **Backend:** Node.js / Express
+* **Frontend:** streamlit/python
+* **Backend:** python
 * **AI Integration:** OpenAI / Gemini API
 * **Deployment:** [Render](https://render.com)
 
