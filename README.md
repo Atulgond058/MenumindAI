@@ -9,7 +9,7 @@
 
 Click on the preview image below to view or download the full PDF documentation.
 
-![Project Preview](Manumind AI.jpg)
+![Project Preview](Manumind%20AI.jpg)
 
 
 ## 🚀 Live Demo
