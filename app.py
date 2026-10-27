@@ -9,66 +9,67 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
-# Premium Dark Glassmorphism CSS with Smooth Scroll & Animations
 st.markdown("""
     <style>
+    /* Simple & Clean Light Theme */
     html {
         scroll-behavior: smooth;
     }
+    
     .stApp {
-        background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
-        color: #f8fafc;
+        background-color: #f8fafc;
+        color: #1e293b;
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    ::-webkit-scrollbar { width: 8px; }
-    ::-webkit-scrollbar-track { background: #0f172a; }
-    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
 
+    /* Clean Image Styling */
     [data-testid="stImage"] img {
-        height: 200px;
+        height: 190px;
         object-fit: cover;
-        border-radius: 12px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        transition: transform 0.3s ease;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
     }
-    [data-testid="stImage"] img:hover { transform: scale(1.03); }
 
+    /* Simple Sidebar Styling */
     section[data-testid="stSidebar"] {
-        background-color: rgba(15, 23, 42, 0.85) !important;
-        backdrop-filter: blur(12px);
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: #ffffff !important;
+        border-right: 1px solid #e2e8f0;
     }
 
+    /* Clean Solid Buttons */
     div.stButton > button {
         width: 100%;
-        background: linear-gradient(90deg, #4f46e5 0%, #3b82f6 100%);
+        background-color: #2563eb;
         color: white;
         border: none;
-        border-radius: 8px;
-        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        padding: 0.5rem 1rem;
         font-weight: 600;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-    }
-    div.stButton > button:hover {
-        background: linear-gradient(90deg, #4338ca 0%, #2563eb 100%);
-        box-shadow: 0 6px 18px rgba(59, 130, 246, 0.5);
-        transform: translateY(-2px);
+        transition: background-color 0.2s ease;
     }
 
-    .badge {
-        background: rgba(99, 102, 241, 0.2);
-        color: #818cf8;
-        padding: 4px 10px;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        border: 1px solid rgba(99, 102, 241, 0.3);
-        display: inline-block;
-        margin-right: 5px;
-        margin-bottom: 5px;
+    div.stButton > button:hover {
+        background-color: #1d4ed8;
     }
-    .price-tag { color: #10b981; font-size: 1.25rem; font-weight: 700; }
+
+    /* Simple Tags/Badges */
+    .badge {
+        background-color: #e0e7ff;
+        color: #3730a3;
+        padding: 3px 8px;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        display: inline-block;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        font-weight: 500;
+    }
+
+    .price-tag {
+        color: #059669;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
     </style>
 """, unsafe_allow_html=True)
 
